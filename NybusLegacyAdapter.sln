@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F350BB51-6F5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nybus.Legacy.NetExtensions.Adapters", "src\Nybus.Legacy.NetExtensions.Adapters\Nybus.Legacy.NetExtensions.Adapters.csproj", "{CF8576EB-F5EE-46BC-B5D5-09FB666B6B7A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{348C3DFA-1C3F-4F28-B77E-C88C14D1A0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Nybus.Legacy.NetExtensions.Adapters", "tests\Tests.Nybus.Legacy.NetExtensions.Adapters\Tests.Nybus.Legacy.NetExtensions.Adapters.csproj", "{1D688821-B17F-434A-81E9-89DF81B14257}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{CF8576EB-F5EE-46BC-B5D5-09FB666B6B7A}.Release|x64.Build.0 = Release|Any CPU
 		{CF8576EB-F5EE-46BC-B5D5-09FB666B6B7A}.Release|x86.ActiveCfg = Release|Any CPU
 		{CF8576EB-F5EE-46BC-B5D5-09FB666B6B7A}.Release|x86.Build.0 = Release|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Debug|x64.Build.0 = Debug|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Release|x64.ActiveCfg = Release|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Release|x64.Build.0 = Release|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D688821-B17F-434A-81E9-89DF81B14257}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CF8576EB-F5EE-46BC-B5D5-09FB666B6B7A} = {F350BB51-6F55-4AC1-BA1F-A4FFE41BC4ED}
+		{1D688821-B17F-434A-81E9-89DF81B14257} = {348C3DFA-1C3F-4F28-B77E-C88C14D1A0EF}
 	EndGlobalSection
 EndGlobal

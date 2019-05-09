@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net47</TargetFramework>
     <RootNamespace>Nybus</RootNamespace>
+    <Description>Implementation of IHostedService interface for Nybus Legacy</Description>
+    <PackageTags>dotnet-framework;framework;queue;nybus;hosted service</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
