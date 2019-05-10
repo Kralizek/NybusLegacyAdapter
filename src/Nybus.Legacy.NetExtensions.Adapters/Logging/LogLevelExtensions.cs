@@ -30,7 +30,7 @@ namespace Nybus.Logging
             throw new NotSupportedException();
         }
 
-        public static LogLevel ToNybusLogLevel(Microsoft.Extensions.Logging.LogLevel level)
+        public static LogLevel ToNybusLogLevel(this Microsoft.Extensions.Logging.LogLevel level)
         {
             switch (level)
             {
