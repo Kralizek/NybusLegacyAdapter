@@ -4,6 +4,7 @@
     <Company>Nybus Project</Company>
     <Product>Nybus</Product>
     <LangVersion>latest</LangVersion>
+    <RootNamespace>Nybus</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
