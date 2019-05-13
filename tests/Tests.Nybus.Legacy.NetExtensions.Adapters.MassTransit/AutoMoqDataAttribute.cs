@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using AutoFixture;
 using AutoFixture.AutoMoq;
 using AutoFixture.NUnit3;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Nybus.Logging;
+using Nybus.MassTransit;
 
 namespace Tests
 {
@@ -26,6 +29,18 @@ namespace Tests
 
             fixture.Customize<NybusLoggerFactoryAdapter>(o => o.Without(p => p.MinimumLevel));
 
+            fixture.Customize<IConfiguration>(o => o.FromFactory((ConfigurationBuilder configurationBuilder, MassTransitConnectionDescriptor connectionDescriptor, string connectionStringName) =>
+            {
+                configurationBuilder.AddInMemoryCollection(new Dictionary<string, string>
+                {
+                    [$"ConnectionStrings:{connectionStringName}"] = connectionDescriptor.ToConnectionString()
+                });
+
+                var configuration = configurationBuilder.Build() as IConfiguration;
+
+                return configuration;
+            }));
+
             return fixture;
         }
     }
@@ -47,6 +62,11 @@ namespace Tests
         public static bool For<TService>(this ServiceDescriptor descriptor)
         {
             return descriptor.ServiceType == typeof(TService);
+        }
+
+        public static string ToConnectionString(this MassTransitConnectionDescriptor connectionDescriptor)
+        {
+            return $"host={connectionDescriptor.Host};username={connectionDescriptor.UserName};password={connectionDescriptor.Password}";
         }
     }
 }
