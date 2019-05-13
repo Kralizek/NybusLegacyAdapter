@@ -9,8 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="Nybus.Core" Version="0.6.0.97" />
-    <PackageReference Include="Nybus.MassTransit" Version="0.6.0.97" />
-
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
   </ItemGroup>
 
