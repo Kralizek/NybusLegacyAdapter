@@ -6,7 +6,7 @@ namespace Nybus
 {
     public static class NybusLegacyMassTransitServiceCollectionExtensions
     {
-        public static IServiceCollection AddNybusWithMassTransit(this IServiceCollection services, NybusLegacyConfiguration configuration)
+        public static IServiceCollection AddNybusLegacyWithMassTransit(this IServiceCollection services, NybusLegacyConfiguration configuration)
         {
             services.AddNybusLegacy(configuration.NybusConfigurator, configuration.SubscriptionsConfigurator);
 
